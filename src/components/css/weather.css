@@ -1,6 +1,6 @@
 .contendor-contendio{
     background-color: rgb(98, 98, 98,0.2);
-    padding: 10px;
+    padding: 5px;
     max-height: 100vh;
     max-width: 100vh;
     display: flex;
@@ -10,13 +10,15 @@
     color: #000;
     font-size: 1.2rem;
     border-radius: 10%;
+    border:2px solid greenyellow
+
   
 }
 
 .caja-header{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 
 }
 .weather-tiempo{
@@ -53,7 +55,7 @@ padding: 10px;
 
 .temperatura{
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .btn{
     border-radius: 10px;
