@@ -1,0 +1,70 @@
+.contendor-contendio{
+    background-color: rgb(98, 98, 98,0.2);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 10%;
+  
+}
+
+.caja-header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.weather-tiempo{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 25px;
+padding: 10px;
+}
+
+.weather-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap:7px;
+    padding: 10px;
+
+    
+}
+.items-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+} 
+
+.caja-temperatura{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: -3px -3px;  
+    cursor: pointer;  
+}
+
+.btn:hover{
+    background-color: #03246C;
+    box-shadow: -3px -3px,
+                  3px 3px,
+                  -3px -3px ; 
+    color: #fff;
+    cursor: pointer;
+
+}

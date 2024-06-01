@@ -1,0 +1,32 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  
+    
+}
+.contenedor-principal{
+background-image: url('https://img.freepik.com/vector-gratis/marco-realista-clima-plastilina_1284-74091.jpg?t=st=1717251396~exp=1717254996~hmac=764f5485c5fd54771307f079ce56d0a72ff10aace5c3e5e01962478e6ffe9e1f&w=996');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-transform: capitalize;
+gap: 60px;
+
+
+}
+.title{
+    display: flex;
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+}
