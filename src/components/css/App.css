@@ -20,7 +20,8 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-transform: capitalize;
-gap: 60px;
+gap: 35px;
+padding: 10px;
 
 
 }
@@ -28,5 +29,5 @@ gap: 60px;
     display: flex;
     text-align: center;
     color: #000;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }

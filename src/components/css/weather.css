@@ -1,8 +1,8 @@
 .contendor-contendio{
     background-color: rgb(98, 98, 98,0.2);
     padding: 10px;
-    height: 100%;
-    width: 50%;
+    max-height: 100vh;
+    max-width: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@
 .caja-header{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 
 }
 .weather-tiempo{
@@ -24,7 +24,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-gap: 25px;
+gap: 20px;
 padding: 10px;
 }
 
@@ -47,10 +47,14 @@ padding: 10px;
 .caja-temperatura{
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap:25px;
     align-items: center;
 }
 
+.temperatura{
+    font-weight: 900;
+    font-size: 2rem;
+}
 .btn{
     border-radius: 10px;
     font-size: 20px;

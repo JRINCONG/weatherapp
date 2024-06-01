@@ -35,8 +35,8 @@ export const WeatherApp = ({Data,Temperaturas}) => {
         <div className='caja-temperatura'>
             {(Change)?
             
-            <p>{Temperaturas[1]} °C</p>
-            :<p>{Temperaturas[0]} °F</p>
+            <p className='temperatura'>{Temperaturas[1]} °C</p>
+            :<p className='temperatura'>{Temperaturas[0]} °F</p>
             }
             <button className='btn' onClick={CambiarTemperatura}>Change to {(!Change)? Temperaturas[1] +' '+ '°C' : Temperaturas[0]+' ' + '°F' }</button>
         </div>
