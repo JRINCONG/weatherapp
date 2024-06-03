@@ -11,6 +11,7 @@ export const WeatherApp = ({Data,Temperaturas}) => {
     }
 
     
+  
   return (
     <>
    
@@ -30,6 +31,7 @@ export const WeatherApp = ({Data,Temperaturas}) => {
                     <li className='items-list'><span>Wind Speed:</span> <span>{Data?.wind?.speed} m/s</span></li>
                     <li className='items-list'><span>Clouds:</span> <span>{Data?.clouds.all} %</span></li>
                     <li className='items-list'><span>Pressure:</span> <span> {Data?.main.pressure} hPa</span></li>
+                    <li className='items-list'><span>humidity:</span> <span> {Data?.main.humidity} %</span></li>
                 </ul>
         </div>
         <div className='caja-temperatura'>

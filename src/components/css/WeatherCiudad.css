@@ -1,0 +1,20 @@
+.caja-busqueda{
+    display: flex;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:5px
+}
+    
+.caja-error h3{
+    color: rgba(245, 10, 10, 0.538);
+  
+
+}
+.bx{
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 15%;
+    border: 1px solid;
+    
+    
+}

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { WeatherApp } from './WeatherApp';
 import './css/App.css';
+import { WeatherCiudad } from './WeatherCiudad';
 
 
 
@@ -10,6 +11,7 @@ export const App = () => {
 
   //stado para cargar la Api
   const  [ Coord , setCoord ] = useState();
+
 
 //estado para cargar las latitude, longitude;
   const [ Ubicacion, setUbicacion] = useState([]);
@@ -57,7 +59,7 @@ export const App = () => {
             
           })         
                      
-          .catch(error => console.log(error))
+          .catch(error => console.log('Pagina actualizada'))
          
 
         }
@@ -65,7 +67,7 @@ export const App = () => {
 
       },[Ubicacion])
 
-
+//este useEffect es para controlar el tiempo  que carga donde sale el sol
       useEffect( ()=>{
         
            setTimeout(()=>{
@@ -76,20 +78,28 @@ export const App = () => {
 
       },[])
 
+
+   
+
   return (
     <>
     <div className='contenedor-principal'>
       <h1 className='title'>Weather App</h1>
-
+      <WeatherCiudad
+      setCoord = { setCoord }
+      setTemperaturas = { setTemperaturas }
+      
+      />
       {
        
-        (!Loading)? <img src='./img/pocas-nubes.gif' width='200px' height='200px'/>:
-   
-      
+      (!Loading)? <img src='./img/pocas-nubes.gif' width='200px' height='200px'/>
+      :     
+     
       <WeatherApp
       Data={Coord}
       Temperaturas={Temperaturas}
       />
+    
     }
     </div>
     </>
